@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background:#e6e6e6;
+        font-family: Arial;
+    }
+    #container{
+        width:1000px;
+        margin:auto;
+        display:flex;
+    }
+
+    /* 왼쪽 사이드 */
+
+    #left-sidebar{
+        width:300px;
+        background-color: #9346db;
+        color:white;
+        text-align:center;
+        padding:20px;
+    }
+
+    /* 프로필 사진 */
+
+    .profile{
+        width:150px;
+        height:150px;
+        border-radius:50%;
+        margin:0 auto;
+        background-image:url("3.jfif");
+        background-size:cover;
+        background-position:center;
+        border:5px solid white;
+    }
+
+    h1{
+        margin:10px 0;
+    }
+
+    .intro{
+        font-size:13px;
+    }
+
+    .detail p{
+        margin:3px 0;
+    }
+
+    button{
+        margin-top:10px;
+        padding:10px 20px;
+        border:none;
+        border-radius:20px;
+    }
+
+    /* 오른쪽 영역 */
+
+    #main{
+        flex:1;
+        background:white;
+        padding:30px;
+        font-style: unset;
+    }
+
+    /* 제목 스타일 */
+
+    h2{
+        border-left:5px solid #9346db;
+        padding-left:10px;
+    }
+
+    /* 강조 */
+
+    .highlight{
+        background:rgb(221, 221, 52);
+    }
+
+    /* 테이블 */
+
+    table{
+        width:100%;
+        border-collapse:collapse;
+    }
+
+    th{
+        background-color:#9346db;
+        color:white;
+    }
+
+    td,th{
+        border:1px solid #ccc;
+        padding:8px;
+        text-align:center;
+    }
+    </style>
+</head>
+<body>
+ <div id="container">
+
+    <div id="left-sidebar">
+
+        <div class="profile"></div>
+
+        <h1>Hong Gildong</h1>
+        <p class="intro">프로그래밍 재밌어요!</p>
+
+        <div class="detail">
+            <p>📍 Incheon, Korea</p>
+            <p>📧 test@naver.com</p>
+        </div>
+
+        <h3>SNS</h3>
+
+        <h3><a href="https://github.com/"><img src="1.png"></a></h3>
+
+    </div>
+
+
+    <div id="main">
+
+        <h2>자기소개</h2>
+        <p>
+        <span class="highlight">프로그래밍</span>에 관심이 많습니다.<br>
+        현재 열심히 공부하며 코딩 중!
+        </p>
+
+
+        <h2>Experience</h2>
+
+        <ul>
+            <li>그런대학교
+                <ul>
+                    <li>응용프로그램 개발(C#)</li>
+                    <li>모바일 app 개발(안드로이드)</li>
+                    <li>반응형 웹</li>
+                </ul>
+            </li>
+
+            <li>더좋은 컴퓨터학원
+                <ul>
+                    <li>Spring 기반 프로젝트 - 쇼핑몰</li>
+                    <li>Cloud 서비스를 이용한 배포</li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <h2>보유 기술</h2>
+
+        <ul>
+            <li>Java</li>
+            <li>Oracle</li>
+            <li>HTML / CSS</li>
+        </ul>
+
+
+        <h2>Education</h2>
+
+        <table>
+
+            <tr>
+                <th>출신학교</th>
+                <th>전공</th>
+                <th>기간</th>
+                <th>구분</th>
+            </tr>
+
+            <tr>
+                <td>그런대학교</td>
+                <td>종이접기학과</td>
+                <td>!!!!.! ~ ????.?</td>
+                <td>졸업</td>
+            </tr>
+
+            <tr>
+                <td>괜찮은고등학교</td>
+                <td>-</td>
+                <td>!!!!.! ~ ????.?</td>
+                <td>졸업</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+</html>
