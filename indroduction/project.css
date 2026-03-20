@@ -63,7 +63,8 @@ body::after{
     text-align:center;
     position:relative;
     top:50%;
-    transform:translateY(-50%);
+    transform:translateY(50%);
+    gap: 10px;
 }
 
 /* 제목 */
@@ -121,28 +122,4 @@ button{
 button:hover{
     background:#1d4ed8;
 }
-.intro{
-    margin-top:20px;
-    line-height:1.6;
-    color:#cbd5f5;
-}
 
-/* 미리보기 카드 */
-.preview{
-    margin-top:40px;
-    display:flex;
-    justify-content:center;
-    gap:20px;
-}
-
-.preview-card{
-    background:#1e293b;
-    padding:15px 20px;
-    border-radius:10px;
-    font-size:14px;
-    transition:0.3s;
-}
-
-.preview-card:hover{
-    transform:translateY(-5px);
-}
