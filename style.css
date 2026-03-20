@@ -1,0 +1,262 @@
+/* 전체 */
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:#020617;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* 배경 */
+
+.stars{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:url("https://www.transparenttextures.com/patterns/stardust.png");
+    animation:moveStars 60s linear infinite;
+    z-index:-1;
+}
+
+@keyframes moveStars{
+    0%{background-position:0 0;}
+    100%{background-position:1000px 1000px;}
+}
+
+/* 레이아웃 */
+
+.container{
+    width:1100px;
+    margin:40px auto;
+    display:flex;
+    background:#0f172a;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 40px rgba(0,0,0,0.7);
+}
+
+/* 사이드 */
+
+.sidebar{
+    width:320px;
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+    padding:30px;
+    text-align:center;
+}
+
+/* 프로필 */
+
+.profile{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin:0 auto 20px auto;
+    background:url("3.jfif");
+    background-size:cover;
+    background-position:center;
+    border:5px solid white;
+}
+
+.birth{
+    opacity:0.8;
+}
+
+/* 시계 */
+
+.clock{
+    margin-top:20px;
+    font-size:22px;
+    letter-spacing:3px;
+    background:rgba(255,255,255,0.15);
+    padding:10px;
+    border-radius:10px;
+}
+
+/* 메인 */
+
+.main{
+    flex:1;
+    padding:40px;
+}
+
+/* 카드 */
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:10px;
+    margin-bottom:25px;
+}
+
+/* 제목 */
+
+h2{
+    border-left:5px solid #60a5fa;
+    padding-left:10px;
+}
+
+/* 타이핑 */
+
+.typing{
+    color:#60a5fa;
+    font-weight:bold;
+}
+
+/* 스킬바 */
+
+.skill{
+    margin-top:20px;
+}
+
+.bar{
+    width:100%;
+    height:12px;
+    background:#334155;
+    border-radius:10px;
+    margin-bottom:15px;
+    overflow:hidden;
+}
+
+.bar div{
+    height:12px;
+    width:0;
+    border-radius:10px;
+}
+
+/* 애니메이션 */
+
+.java{
+    background:#f97316;
+    animation:java 2s forwards;
+}
+
+.oracle{
+    background:#10b981;
+    animation:oracle 2s forwards;
+}
+
+.html{
+    background:#3b82f6;
+    animation:html 2s forwards;
+}
+
+@keyframes java{
+    to{width:95%;}
+}
+
+@keyframes oracle{
+    to{width:80%;}
+}
+
+@keyframes html{
+    to{width:65%;}
+}
+
+/* 프로젝트 */
+
+.projects{
+    display:flex;
+    gap:20px;
+}
+
+.project{
+    flex:1;
+    background:#334155;
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* 반응형 */
+
+@media(max-width:900px){
+
+.container{
+    flex-direction:column;
+    width:95%;
+}
+
+.sidebar{
+    width:100%;
+}
+
+.projects{
+    flex-direction:column;
+}
+
+}
+/* 학력 테이블 */
+.edu-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+.edu-table th,
+.edu-table td{
+    border:1px solid #334155;
+    padding:10px;
+    text-align:center;
+}
+
+.edu-table th{
+    background:#1e293b;
+    color:#60a5fa;
+}
+
+.edu-table tr:hover{
+    background:#0f172a;
+}
+/* 사이드바 추가 스타일 */
+
+.intro-mini{
+    margin-top:10px;
+    font-size:14px;
+    color:#cbd5f5;
+}
+
+/* 스킬 태그 */
+.mini-skill{
+    margin-top:15px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:5px;
+    justify-content:center;
+}
+
+.mini-skill span{
+    background:#1e293b;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+    color:#60a5fa;
+}
+
+/* 연락처 */
+.contact-mini{
+    margin-top:15px;
+    font-size:13px;
+    color:#94a3b8;
+}
+
+/* 버튼 */
+.sidebar button{
+    margin-top:15px;
+    padding:8px 15px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.sidebar button:hover{
+    background:#1d4ed8;
+}
